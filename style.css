@@ -1,0 +1,8 @@
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Apply Inter font to the body and set a default background color */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Light blue-gray for the body */
+}

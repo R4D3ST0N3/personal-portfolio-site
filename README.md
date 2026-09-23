@@ -16,6 +16,7 @@ Edit the marked content directly in `index.html`:
 - **Experience:** Add or duplicate a `.timeline-item` inside `#experience`. Include your dates, role, organization, responsibilities, and results.
 - **Achievements:** Add or duplicate an `.achievement-card` inside `#achievements` for awards, certifications, competitions, or milestones.
 - **Projects:** Update the three `.project-card` elements inside `#projects` with a title, description, and project link.
+- **Get to know me:** Update the casual introduction and `.game-link` URLs inside `#fun`. Replace the general tracker-site links with your personal Valorant, Fortnite, and other-game stats profiles.
 - **Social media:** Replace the URLs in the `#social` links near the bottom of the page. Add another link using the same format for any additional account.
 - **Profile details:** Update the name, page title, description, footer year, and contact copy to match your personal brand.
 

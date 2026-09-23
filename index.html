@@ -3,172 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My UI/UX Design Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Link to your custom CSS file -->
+    <meta name="description" content="Vado's personal portfolio, projects, experience, and achievements.">
+    <title>Vado | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-gray-800">
-
-    <!-- Header & Navigation -->
-    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
-        <nav class="container mx-auto flex justify-between items-center flex-wrap">
-            <!-- Logo/Name -->
-            <a href="#" class="text-2xl font-bold text-indigo-700 hover:text-indigo-900 transition duration-300 ease-in-out">
-                Vado
-            </a>
-
-            <!-- Mobile Navigation Toggle -->
-            <div class="block lg:hidden">
-                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-indigo-500 border-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z"/></svg>
-                </button>
-            </div>
-
-            <!-- Navigation Links -->
-            <div id="nav-content" class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-4 lg:mt-0">
-                <div class="text-sm lg:flex-grow lg:text-right">
-                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 transition duration-300 ease-in-out font-medium">
-                        About
-                    </a>
-                    <a href="#portfolio" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 mr-6 transition duration-300 ease-in-out font-medium">
-                        Portfolio
-                    </a>
-                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out font-medium">
-                        Contact
-                    </a>
-                </div>
+<body>
+    <header class="site-header">
+        <nav class="container navigation" aria-label="Main navigation">
+            <a class="brand" href="#top">Vado<span>.</span></a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-content" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="nav-content">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#projects">Projects</a>
+                <a class="nav-cta" href="#contact">Let's talk</a>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 md:py-32 text-center rounded-b-lg shadow-lg">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                Crafting Intuitive Experiences. <br> I'm Vado, a UI/UX Designer.
-            </h1>
-            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-                Passionate about creating user-centered designs that are both beautiful and functional.
-                I transform complex problems into elegant solutions.
-            </p>
-            <a href="#portfolio" class="bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
-                View My Work
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-auto max-w-4xl -mt-16 relative z-10 p-8 md:p-12 mb-12">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
-            <!-- Use your actual profile image file name here -->
-            <img src="WhatsApp Image 2025-08-24 at 17.00.55_c8e71415.jpg" alt="Vado Profile Picture" class="w-44 h-44 rounded-full object-cover shadow-xl border-4 border-indigo-200">
-            <div>
-                <h2 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">About Me</h2>
-                <p class="text-gray-700 leading-relaxed text-lg mb-4">
-                    Hello my name is Vado. I made this portfolio for my college and working experience. I want to work outside like globally and also learn more about that stuffs. Coding is just like a whole new world for this generation since it is something to master for the future.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio/Projects Section -->
-    <section id="portfolio" class="py-16 md:py-24 bg-gray-50 rounded-lg shadow-lg mx-auto max-w-6xl p-8 md:p-12 mb-12">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">My Work</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                <!-- Project Card 1: Predict My Salary -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
-                    <!-- Placeholder Image for Project 1 -->
-                    <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Predict+Salary" alt="Predict My Salary Project Thumbnail" class="w-full h-48 object-cover rounded-t-xl">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Predict My Salary</h3>
-                        <p class="text-gray-600 text-base mb-4">
-                            Developed a model to predict salaries based on various factors. This project focuses on presenting data insights clearly and intuitively.
-                        </p>
-                        <a href="https://colab.research.google.com/drive/1g-7BsNwHxDajgNjqvqEuo2ggfZWutv5k?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition duration-300 ease-in-out">
-                            View Case Study (Colab)
-                        </a>
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">UI/UX designer &amp; creative technologist</p>
+                    <h1>Thoughtful digital experiences, built with <em>purpose.</em></h1>
+                    <p class="hero-intro">I'm Vado, a designer and builder exploring the space between useful technology and human-centered design.</p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+                        <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↓</span></a>
                     </div>
                 </div>
-
-                <!-- Project Card 2: Gender Recognition -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
-                    <!-- Placeholder Image for Project 2 -->
-                    <img src="https://placehold.co/600x400/a855f7/ffffff?text=Gender+Recognition" alt="Gender Recognition Project Thumbnail" class="w-full h-48 object-cover rounded-t-xl">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Gender Recognition</h3>
-                        <p class="text-gray-600 text-base mb-4">
-                            Explored machine learning techniques for gender recognition. The focus here is on the user's interaction with the prediction output.
-                        </p>
-                        <a href="https://colab.research.google.com/drive/1TIrKEbPm9v6PAz5Lz60dUWpAJP3hGUTg?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition duration-300 ease-in-out">
-                            View Case Study (Colab)
-                        </a>
-                    </div>
+                <div class="hero-note" aria-label="Portfolio introduction">
+                    <span class="note-number">01</span>
+                    <p>Currently learning, experimenting, and looking for opportunities to grow globally.</p>
+                    <span class="note-line"></span>
                 </div>
-
-                <!-- Project Card 3: Scam Detector -->
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
-                    <!-- Placeholder Image for Project 3 -->
-                    <img src="https://placehold.co/600x400/c084fc/ffffff?text=Scam+Detector" alt="Scam Detector Project Thumbnail" class="w-full h-48 object-cover rounded-t-xl">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Scam Detector</h3>
-                        <p class="text-gray-600 text-base mb-4">
-                            Designed a system to detect potential scams using data analysis. User feedback and trust in the system are key UX considerations.
-                        </p>
-                        <a href="https://colab.research.google.com/drive/1DdhDHu1FM9u1hnt-fFu9qPcnGT-LyWn4?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition duration-300 ease-in-out">
-                            View Case Study (Colab)
-                        </a>
-                    </div>
-                </div>
-                <!-- Add more project cards as needed -->
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-gradient-to-r from-gray-700 to-gray-900 text-white rounded-lg shadow-lg mx-auto max-w-4xl p-8 md:p-12 mb-12">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-8">Let's Connect!</h2>
-            <p class="text-lg mb-10 max-w-xl mx-auto">
-                I'm always open to new opportunities and collaborations. Feel free to reach out!
-            </p>
-            <form class="max-w-md mx-auto">
-                <div class="mb-6">
-                    <input type="text" id="name" name="name" placeholder="Your Name"
-                           class="w-full px-5 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:ring-indigo-500 focus:border-indigo-500 placeholder-gray-400">
+        <section class="section-shell" id="about">
+            <div class="container split-layout">
+                <div class="section-heading"><p class="eyebrow">01 / About me</p><h2>A little bit about who I am.</h2></div>
+                <div class="section-content">
+                    <p class="lead">Hello, my name is Vado. I created this portfolio to document my college work, professional experience, and continued growth.</p>
+                    <p>I'm interested in the way design and code can make complicated things feel simple. I enjoy learning new tools, solving meaningful problems, and collaborating with people from different backgrounds.</p>
+                    <div class="quick-facts"><div><strong>Based in</strong><span>Indonesia</span></div><div><strong>Focus</strong><span>Design &amp; technology</span></div><div><strong>Open to</strong><span>Global opportunities</span></div></div>
                 </div>
-                <div class="mb-6">
-                    <input type="email" id="email" name="email" placeholder="Your Email"
-                           class="w-full px-5 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:ring-indigo-500 focus:border-indigo-500 placeholder-gray-400">
-                </div>
-                <div class="mb-6">
-                    <textarea id="message" name="message" rows="5" placeholder="Your Message"
-                              class="w-full px-5 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:ring-indigo-500 focus:border-indigo-500 placeholder-gray-400"></textarea>
-                </div>
-                <button type="submit" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
-                    Send Message
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg shadow-inner">
-        <div class="container mx-auto px-6">
-            <p>&copy; 2025 Vado. All rights reserved.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/raden-mahaghaniyy-367142322/" class="text-gray-400 hover:text-white transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://www.instagram.com/itsvadorawm/" class="text-gray-400 hover:text-white transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://www.tiktok.com/@tr4yc3?_t=ZS-8z8rK8DDKqu&_r=1" class="text-gray-400 hover:text-white transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">TikTok</a>
             </div>
-        </div>
+        </section>
+
+        <section class="section-shell tinted" id="experience">
+            <div class="container split-layout">
+                <div class="section-heading"><p class="eyebrow">02 / Experience</p><h2>Where I have been learning.</h2></div>
+                <div class="timeline section-content">
+                    <!-- Add each role as a new article. Replace the placeholder content with your own experience. -->
+                    <article class="timeline-item"><span class="timeline-date">2025 — Present</span><div><h3>Student &amp; Independent Creator</h3><p class="muted">College / Personal projects</p><p>Building practical projects across UI/UX design, data, and web development. Add your responsibilities and results here.</p></div></article>
+                    <article class="timeline-item"><span class="timeline-date">Add dates</span><div><h3>Your previous role or organization</h3><p class="muted">Company / School</p><p>Describe what you worked on, the skills you developed, and the impact you made.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell" id="achievements">
+            <div class="container split-layout">
+                <div class="section-heading"><p class="eyebrow">03 / Achievements</p><h2>Milestones worth sharing.</h2></div>
+                <div class="achievement-grid section-content">
+                    <!-- Duplicate an achievement card when you have another award, certification, or milestone. -->
+                    <article class="achievement-card"><span class="card-index">A1</span><h3>Your achievement</h3><p>Add an award, certification, competition result, or important milestone here.</p><span class="card-meta">Year / Organization</span></article>
+                    <article class="achievement-card"><span class="card-index">A2</span><h3>Your certification</h3><p>Add the name of a course, certification, or academic accomplishment here.</p><span class="card-meta">Year / Issuer</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell tinted" id="projects">
+            <div class="container">
+                <div class="section-intro"><div><p class="eyebrow">04 / Selected work</p><h2>Projects in progress and practice.</h2></div><p>Here are a few projects where I explore ideas through data, design, and technology.</p></div>
+                <div class="project-grid">
+                    <article class="project-card"><div class="project-number">01</div><h3>Predict My Salary</h3><p>A salary prediction model presented through clear, intuitive data insights.</p><a href="https://colab.research.google.com/drive/1g-7BsNwHxDajgNjqvqEuo2ggfZWutv5k?usp=sharing" target="_blank" rel="noopener noreferrer">View case study <span aria-hidden="true">↗</span></a></article>
+                    <article class="project-card"><div class="project-number">02</div><h3>Gender Recognition</h3><p>An exploration of machine learning techniques and user-friendly prediction output.</p><a href="https://colab.research.google.com/drive/1TIrKEbPm9v6PAz5Lz60dUWpAJP3hGUTg?usp=sharing" target="_blank" rel="noopener noreferrer">View case study <span aria-hidden="true">↗</span></a></article>
+                    <article class="project-card"><div class="project-number">03</div><h3>Scam Detector</h3><p>A data analysis project focused on trust, clarity, and helping people identify potential scams.</p><a href="https://colab.research.google.com/drive/1DdhDHu1FM9u1hnt-fFu9qPcnGT-LyWn4?usp=sharing" target="_blank" rel="noopener noreferrer">View case study <span aria-hidden="true">↗</span></a></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid"><div><p class="eyebrow">05 / Contact</p><h2>Have a project or opportunity in mind?</h2><p>I'm open to conversations, collaborations, and new ways to learn.</p></div><form><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about it" required></textarea><button class="button button-light" type="submit">Send message <span aria-hidden="true">↗</span></button></form></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row"><p>© 2026 Vado. Built with curiosity.</p><div class="social-links" id="social"><a href="https://www.linkedin.com/in/raden-mahaghaniyy-367142322/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/itsvadorawm/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@tr4yc3?_t=ZS-8z8rK8DDKqu&amp;_r=1" target="_blank" rel="noopener noreferrer">TikTok ↗</a></div></div>
     </footer>
 
-    <!-- Link to your custom JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -31,12 +31,14 @@ document.querySelectorAll('[data-placeholder-link]').forEach(link => {
 const idleArtwork = document.querySelector('.hero-image');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-if (idleArtwork && !reducedMotion.matches) {
+if (idleArtwork) {
     let idleTimer;
 
     const pauseIdleAnimation = () => {
         window.clearTimeout(idleTimer);
         idleArtwork.classList.remove('idle-active');
+        if (reducedMotion.matches) return;
+
         idleTimer = window.setTimeout(() => {
             idleArtwork.classList.add('idle-active');
         }, 1800);
@@ -46,14 +48,7 @@ if (idleArtwork && !reducedMotion.matches) {
         window.addEventListener(eventName, pauseIdleAnimation, { passive: true });
     });
 
-    reducedMotion.addEventListener('change', event => {
-        if (event.matches) {
-            window.clearTimeout(idleTimer);
-            idleArtwork.classList.remove('idle-active');
-        } else {
-            pauseIdleAnimation();
-        }
-    });
+    reducedMotion.addEventListener('change', pauseIdleAnimation);
 
     pauseIdleAnimation();
 }

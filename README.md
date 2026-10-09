@@ -4,12 +4,13 @@ A small, responsive multi-page portfolio made with static HTML, CSS, and JavaScr
 
 ## Pages
 
-- `index.html` — Introduction, selected projects, and contact call to action.
+- `index.html` — Introduction, portrait, selected projects, and contact call to action.
 - `about.html` — Personal story, education, community, and student-council documentation.
 - `work.html` — Projects, documentation contribution, and achievements.
 - `interests.html` — Guitar, music, gaming, and other personal interests.
 - `style.css` — Shared visual design, responsive layouts, and reduced-motion rules.
 - `script.js` — Mobile navigation and the home-page idle animation.
+- `images/website-pfp.jpg` — Portrait shown in the home-page hero.
 
 ## Personalize the content
 
@@ -20,7 +21,7 @@ Search the HTML files for `ADD`, `Add`, `to add`, or `Make this yours` to find c
 - **Interests:** Add guitar details, favorite music, personal interests, gaming stats, and your actual profile URLs.
 - **Links:** Replace the disabled `href="#"` placeholders for YouTube, gaming profiles, and any external achievements portfolio. Remove `aria-disabled="true"` and `data-placeholder-link` once a real URL is in place. Add your email address to the contact area on `index.html`.
 - **Socials:** The LinkedIn, Instagram, and TikTok URLs are already populated; verify they are the accounts you want to publish.
-- **Images:** Replace any `.image-slot` contents with an image you have permission to use. For example:
+- **Images:** The home page uses `images/website-pfp.jpg`. Replace it with an image you have permission to use if desired. Replace other `.image-slot` contents with images you have permission to use. For example:
 
   ```html
   <figure class="image-slot">
@@ -29,7 +30,7 @@ Search the HTML files for `ADD`, `Add`, `to add`, or `Make this yours` to find c
   </figure>
   ```
 
-  Store your optimized images in an `images/` folder, use meaningful alternative text, and avoid publishing identifiable photos of other people without permission. The image slots are deliberately styled placeholders, so no image files are required for the site to render.
+  Store images in the `images/` folder, use meaningful alternative text, and avoid publishing identifiable photos of other people without permission. Unfilled image slots are deliberately styled placeholders.
 
 ## Run locally
 

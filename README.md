@@ -1,30 +1,39 @@
-# Personal Portfolio Site
+# Vado's portfolio
 
-A responsive, single-page portfolio for Vado. It highlights personal information, experience, achievements, projects, contact details, and social media accounts.
+A small, responsive multi-page portfolio made with static HTML, CSS, and JavaScript.
 
-## Files
+## Pages
 
-- `index.html` contains the page structure and all portfolio content.
-- `style.css` contains the visual design, layout, responsive behavior, and typography.
-- `script.js` handles smooth scrolling, the mobile navigation menu, and the demo contact form.
+- `index.html` — Introduction, selected projects, and contact call to action.
+- `about.html` — Personal story, education, community, and student-council documentation.
+- `work.html` — Projects, documentation contribution, and achievements.
+- `interests.html` — Guitar, music, gaming, and other personal interests.
+- `style.css` — Shared visual design, responsive layouts, and reduced-motion rules.
+- `script.js` — Mobile navigation and the home-page idle animation.
 
-## Add your information
+## Personalize the content
 
-Edit the marked content directly in `index.html`:
+Search the HTML files for `ADD`, `Add`, `to add`, or `Make this yours` to find content that needs your details. In particular:
 
-- **About me:** Update the text inside `#about` and the three quick facts.
-- **Experience:** Add or duplicate a `.timeline-item` inside `#experience`. Include your dates, role, organization, responsibilities, and results.
-- **Achievements:** Add or duplicate an `.achievement-card` inside `#achievements` for awards, certifications, competitions, or milestones.
-- **Projects:** Update the three `.project-card` elements inside `#projects` with a title, description, and project link.
-- **Get to know me:** Update the casual introduction and `.game-link` URLs inside `#fun`. Replace the general tracker-site links with your personal Valorant, Fortnite, and other-game stats profiles.
-- **Social media:** Replace the URLs in the `#social` links near the bottom of the page. Add another link using the same format for any additional account.
-- **Profile details:** Update the name, page title, description, footer year, and contact copy to match your personal brand.
+- **About:** Add real biographical details, school or college background, and the story of your student-council documentation contribution. The current prompts are scaffolding, not claims about your life.
+- **Work:** Expand each project with your specific role, process, tools, outcome, and limitations. Add only achievements you actually earned.
+- **Interests:** Add guitar details, favorite music, personal interests, gaming stats, and your actual profile URLs.
+- **Links:** Replace the disabled `href="#"` placeholders for YouTube, gaming profiles, and any external achievements portfolio. Remove `aria-disabled="true"` and `data-placeholder-link` once a real URL is in place. Add your email address to the contact area on `index.html`.
+- **Socials:** The LinkedIn, Instagram, and TikTok URLs are already populated; verify they are the accounts you want to publish.
+- **Images:** Replace any `.image-slot` contents with an image you have permission to use. For example:
+
+  ```html
+  <figure class="image-slot">
+      <img src="images/my-photo.webp" alt="Describe what is visible in this photo">
+      <figcaption>A short caption, if useful.</figcaption>
+  </figure>
+  ```
+
+  Store your optimized images in an `images/` folder, use meaningful alternative text, and avoid publishing identifiable photos of other people without permission. The image slots are deliberately styled placeholders, so no image files are required for the site to render.
 
 ## Run locally
 
-This is a static website, so no build step is required. Open `index.html` in a browser, or serve the folder with any local static server.
-
-For example, with Python installed:
+Open `index.html` directly, or serve the folder with a local static server:
 
 ```bash
 python -m http.server 8000
@@ -32,7 +41,4 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Notes
-
-- The contact form currently shows a confirmation message and does not send email. Connect it to a form service or backend before publishing.
-- The page loads its fonts from Google Fonts, so an internet connection is needed for the intended typography.
+The font files load from Google Fonts, so the intended typography needs an internet connection. Page-transition effects use the browser's View Transitions support where available; the site still navigates normally in other browsers. The home illustration only animates after a short idle period and is disabled for visitors who prefer reduced motion.

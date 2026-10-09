@@ -27,28 +27,3 @@ if (navToggle && navContent) {
 document.querySelectorAll('[data-placeholder-link]').forEach(link => {
     link.addEventListener('click', event => event.preventDefault());
 });
-
-const idleArtwork = document.querySelector('.hero-image');
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-if (idleArtwork) {
-    let idleTimer;
-
-    const pauseIdleAnimation = () => {
-        window.clearTimeout(idleTimer);
-        idleArtwork.classList.remove('idle-active');
-        if (reducedMotion.matches) return;
-
-        idleTimer = window.setTimeout(() => {
-            idleArtwork.classList.add('idle-active');
-        }, 1800);
-    };
-
-    ['pointerdown', 'pointermove', 'keydown', 'scroll', 'touchstart'].forEach(eventName => {
-        window.addEventListener(eventName, pauseIdleAnimation, { passive: true });
-    });
-
-    reducedMotion.addEventListener('change', pauseIdleAnimation);
-
-    pauseIdleAnimation();
-}

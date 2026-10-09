@@ -6,10 +6,10 @@ A small, responsive multi-page portfolio made with static HTML, CSS, and JavaScr
 
 - `index.html` — Introduction, portrait, selected projects, and contact call to action.
 - `pages/about.html` — Personal story, education, community, and student-council documentation.
-- `pages/work.html` — Projects, documentation contribution, and achievements.
+- `pages/work.html` — Project notebooks and a community documentation contribution.
 - `pages/interests.html` — Guitar, music, gaming, and other personal interests.
 - `css/style.css` — Shared visual design, responsive layouts, and reduced-motion rules.
-- `js/script.js` — Mobile navigation and the home-page idle animation.
+- `js/script.js` — Mobile navigation and disabled-placeholder link handling.
 - `images/website-pfp.jpg` — Portrait shown in the home-page hero.
 
 ## Personalize the content
@@ -42,4 +42,4 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-The font files load from Google Fonts, so the intended typography needs an internet connection. Page-transition effects use the browser's View Transitions support where available; the site still navigates normally in other browsers. The home illustration only animates after a short idle period and is disabled for visitors who prefer reduced motion.
+The font files load from Google Fonts, so the intended typography needs an internet connection. Supported browsers use View Transitions for page changes; other browsers navigate normally. The site respects reduced-motion preferences for transitions and smooth scrolling.

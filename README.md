@@ -5,16 +5,16 @@ A small, responsive multi-page portfolio made with static HTML, CSS, and JavaScr
 ## Pages
 
 - `index.html` — Introduction, portrait, selected projects, and contact call to action.
-- `about.html` — Personal story, education, community, and student-council documentation.
-- `work.html` — Projects, documentation contribution, and achievements.
-- `interests.html` — Guitar, music, gaming, and other personal interests.
-- `style.css` — Shared visual design, responsive layouts, and reduced-motion rules.
-- `script.js` — Mobile navigation and the home-page idle animation.
+- `pages/about.html` — Personal story, education, community, and student-council documentation.
+- `pages/work.html` — Projects, documentation contribution, and achievements.
+- `pages/interests.html` — Guitar, music, gaming, and other personal interests.
+- `css/style.css` — Shared visual design, responsive layouts, and reduced-motion rules.
+- `js/script.js` — Mobile navigation and the home-page idle animation.
 - `images/website-pfp.jpg` — Portrait shown in the home-page hero.
 
 ## Personalize the content
 
-Search the HTML files for `ADD`, `Add`, `to add`, or `Make this yours` to find content that needs your details. In particular:
+Search the HTML files in the repository root and `pages/` folder for `ADD`, `Add`, `to add`, or `Make this yours` to find content that needs your details. In particular:
 
 - **About:** Add real biographical details, school or college background, and the story of your student-council documentation contribution. The current prompts are scaffolding, not claims about your life.
 - **Work:** Expand each project with your specific role, process, tools, outcome, and limitations. Add only achievements you actually earned.
@@ -25,7 +25,7 @@ Search the HTML files for `ADD`, `Add`, `to add`, or `Make this yours` to find c
 
   ```html
   <figure class="image-slot">
-      <img src="images/my-photo.webp" alt="Describe what is visible in this photo">
+      <img src="../images/my-photo.webp" alt="Describe what is visible in this photo">
       <figcaption>A short caption, if useful.</figcaption>
   </figure>
   ```
@@ -34,7 +34,7 @@ Search the HTML files for `ADD`, `Add`, `to add`, or `Make this yours` to find c
 
 ## Run locally
 
-Open `index.html` directly, or serve the folder with a local static server:
+Open the root `index.html` directly, or serve the folder with a local static server:
 
 ```bash
 python -m http.server 8000

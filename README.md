@@ -10,18 +10,17 @@ A small, responsive multi-page portfolio made with static HTML, CSS, and JavaScr
 - `pages/interests.html` — Guitar, music, gaming, and other personal interests.
 - `css/style.css` — Shared visual design, responsive layouts, and reduced-motion rules.
 - `js/script.js` — Mobile navigation and disabled-placeholder link handling.
-- `images/website-pfp.jpg` — Portrait shown in the home-page hero.
+- `images/` — Owner portrait, notebook-output charts, and locally stored interest photos. See [image credits](images/credits.md) for photo sources and licenses.
 
 ## Personalize the content
 
-Search the HTML files in the repository root and `pages/` folder for `ADD`, `Add`, `to add`, or `Make this yours` to find content that needs your details. In particular:
+The About, Work, and Interests pages now use details from the owner's profile notes. They intentionally present a public-safe summary: private identifiers, exact school and location, birth date, and detailed grades are not included. The profile notes in `My_Profile/` are a separate source and should be stored privately if they contain details you do not want public; static files in a published repository may be accessible even when they are not linked from a page.
 
-- **About:** Add real biographical details, school or college background, and the story of your student-council documentation contribution. The current prompts are scaffolding, not claims about your life.
-- **Work:** Expand each project with your specific role, process, tools, outcome, and limitations. Add only achievements you actually earned.
-- **Interests:** Add guitar details, favorite music, personal interests, gaming stats, and your actual profile URLs.
-- **Links:** Replace the disabled `href="#"` placeholders for YouTube, gaming profiles, and any external achievements portfolio. Remove `aria-disabled="true"` and `data-placeholder-link` once a real URL is in place. Add your email address to the contact area on `index.html`.
-- **Socials:** The LinkedIn, Instagram, and TikTok URLs are already populated; verify they are the accounts you want to publish.
-- **Images:** The home page uses `images/website-pfp.jpg`. Replace it with an image you have permission to use if desired. Replace other `.image-slot` contents with images you have permission to use. For example:
+- **About:** The page summarizes interests, study goals, strengths, growth areas, languages, and collaboration experience.
+- **Work:** Add verified personal roles, process, tools, findings, outcomes, and limitations to the notebook case studies. Keep claims proportionate to what the notebooks demonstrate.
+- **Interests:** The page includes the listed music, guitar, sports, games, anime, language learning, and creative interests. Remove or revise anything that is no longer accurate.
+- **Links:** The LinkedIn, Instagram, and TikTok URLs are populated; confirm they are the intended public accounts. The contact button uses LinkedIn. Avoid adding private account links or gaming details unless you want them public.
+- **Images:** The home and About pages use `images/website-pfp.jpg`. Project charts are copied from the linked notebook outputs; the three interest photos are stored locally with source and license credits in `images/credits.md`. If replacing or adding images, use meaningful alternative text and avoid publishing identifiable photos of other people without permission. For example:
 
   ```html
   <figure class="image-slot">
@@ -30,7 +29,7 @@ Search the HTML files in the repository root and `pages/` folder for `ADD`, `Add
   </figure>
   ```
 
-  Store images in the `images/` folder, use meaningful alternative text, and avoid publishing identifiable photos of other people without permission. Unfilled image slots are deliberately styled placeholders.
+  Store images in the `images/` folder and use meaningful alternative text.
 
 ## Run locally
 

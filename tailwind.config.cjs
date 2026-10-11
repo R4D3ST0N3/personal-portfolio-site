@@ -7,16 +7,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Custom colors based on the original site's CSS variables
-        ink: '#17211f',
-        muted: '#65716d',
-        paper: '#f4f3ed',
-        white: '#fffef9',
-        accent: '#d4f36a',
-        accentDark: '#5f7019',
-        line: '#d9ddd4',
-        peach: '#f5b99d',
-        blue: '#b9d5e4',
+        // Custom colors based on the new distinctive palette
+        ink: '#2c3e50',
+        muted: '#7f8c8d',
+        paper: '#fdf6e3',
+        white: '#ffffff',
+        accent: '#e74c3c',
+        'accent-dark': '#c0392b',
+        line: '#ecf0f1',
+        peach: '#f39c12',
+        blue: '#3498db',
       },
       fontFamily: {
         display: ['Space Grotesk', 'sans-serif'],

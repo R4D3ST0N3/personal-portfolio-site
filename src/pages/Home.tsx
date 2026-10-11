@@ -62,7 +62,7 @@ const Home: React.FC = () => {
                 className="home-project grid grid-cols-[145px_minmax(0,1fr)_auto] items-center gap-6 py-4 border-t"
               >
                 <img
-                  className="home-project-thumb w-36 h-28 p-2 border border-line bg-white object-contain"
+                  className="home-project-thumb w-36 h-28 p-2 border border-line bg-paper object-contain"
                   src="/images/salary-score-relationship.png"
                   alt="Scatter plot comparing test scores and interview scores, with marginal histograms."
                 />
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
                 className="home-project grid grid-cols-[145px_minmax(0,1fr)_auto] items-center gap-6 py-4 border-t"
               >
                 <img
-                  className="home-project-thumb w-36 h-28 p-2 border border-line bg-white object-contain"
+                  className="home-project-thumb w-36 h-28 p-2 border border-line bg-paper object-contain"
                   src="/images/gender-label-distribution.png"
                   alt="Bar chart of the image dataset's two supplied labels, male and female."
                 />
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
                 className="home-project grid grid-cols-[145px_minmax(0,1fr)_auto] items-center gap-6 py-4 border-t"
               >
                 <img
-                  className="home-project-thumb w-36 h-28 p-2 border border-line bg-white object-contain"
+                  className="home-project-thumb w-36 h-28 p-2 border border-line bg-paper object-contain"
                   src="/images/spam-confusion-matrix.png"
                   alt="Confusion matrix comparing true and predicted labels in the held-out test split."
                 />

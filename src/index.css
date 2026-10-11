@@ -2,24 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS variables to match the original design */
+/* Custom CSS variables to match the new design */
 :root {
-  --ink: #17211f;
-  --muted: #65716d;
-  --paper: #f4f3ed;
-  --white: #fffef9;
-  --accent: #d4f36a;
-  --accent-dark: #5f7019;
-  --line: #d9ddd4;
-  --peach: #f5b99d;
-  --blue: #b9d5e4;
+  --ink: #2c3e50;
+  --muted: #7f8c8d;
+  --paper: #fdf6e3;
+  --white: #ffffff;
+  --accent: #e74c3c;
+  --accent-dark: #c0392b;
+  --line: #ecf0f1;
+  --peach: #f39c12;
+  --blue: #3498db;
   --display: "Space Grotesk", sans-serif;
   --body: "DM Sans", sans-serif;
 }
 
 /* Base styles */
 * {
-  @apply border-border;
+  border-color: var(--line);
 }
 
 body {
@@ -54,42 +54,6 @@ body {
 .blue {
   @apply bg-blue;
 }
-
-.text-ink {
-  @apply text-ink;
-}
-.text-muted {
-  @apply text-muted;
-}
-.text-paper {
-  @apply text-paper;
-}
-.text-white {
-  @apply text-white;
-}
-.text-accent {
-  @apply text-accent;
-}
-.text-accent-dark {
-  @apply text-accent-dark;
-}
-.text-line {
-  @apply text-line;
-}
-.text-peach {
-  @apply text-peach;
-}
-.text-blue {
-  @apply text-blue;
-}
-
-.font-display {
-  @apply font-display;
-}
-.font-body {
-  @apply font-body;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   @apply w-2;

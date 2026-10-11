@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none">
+  <rect width="1200" height="320" rx="18" fill="#0D1117"/>
+  <path d="M0 250H1200" stroke="#30363D"/>
+  <path d="M0 270H1200" stroke="#21262D"/>
+  <circle cx="54" cy="48" r="5" fill="#D4F36A"/>
+  <text x="78" y="54" fill="#9DA7B3" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">STUDENT PORTFOLIO · INDONESIA</text>
+  <text x="54" y="151" fill="#F0F6FC" font-family="Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="-2">Learning by building</text>
+  <text x="54" y="216" fill="#D4F36A" font-family="Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-1">with data.</text>
+  <text x="54" y="290" fill="#9DA7B3" font-family="Arial, sans-serif" font-size="16">Engineering · data · machine learning</text>
+  <g transform="translate(798 47)">
+    <rect x="0.5" y="0.5" width="347" height="177" rx="12" fill="#161B22" stroke="#30363D"/>
+    <path d="M41 31V139H311" stroke="#8B949E" stroke-width="1.5"/>
+    <path d="M41 112H311M41 85H311M41 58H311" stroke="#30363D"/>
+    <path d="M58 118L104 98L151 104L195 70L237 81L286 43" stroke="#D4F36A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="58" cy="118" r="4" fill="#D4F36A"/>
+    <circle cx="104" cy="98" r="4" fill="#D4F36A"/>
+    <circle cx="151" cy="104" r="4" fill="#D4F36A"/>
+    <circle cx="195" cy="70" r="4" fill="#D4F36A"/>
+    <circle cx="237" cy="81" r="4" fill="#D4F36A"/>
+    <circle cx="286" cy="43" r="4" fill="#D4F36A"/>
+    <text x="24" y="164" fill="#8B949E" font-family="Arial, sans-serif" font-size="11">OBSERVE</text>
+    <text x="263" y="164" fill="#8B949E" font-family="Arial, sans-serif" font-size="11">LEARN</text>
+  </g>
+  <text x="798" y="278" fill="#8B949E" font-family="Arial, sans-serif" font-size="14" letter-spacing="1">SMALL PROJECTS · HONEST RESULTS</text>
+</svg>

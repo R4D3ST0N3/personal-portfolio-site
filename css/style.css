@@ -89,7 +89,7 @@ p { margin-top: 0; }
 .home-project-list { border-top: 1px solid var(--line); }
 .home-project { display: grid; grid-template-columns: 145px minmax(0, 1fr) auto; align-items: center; gap: 22px; padding: 20px 0; border-bottom: 1px solid var(--line); }
 .home-project-thumb { width: 145px; height: 118px; padding: 7px; border: 1px solid var(--line); background: var(--white); object-fit: contain; }
-.home-project .project-number { margin: 0 0 7px; }
+.home-project .project-number { margin: 0; margin: 0 0 7px; }
 .home-project h3 { margin-bottom: 7px; font-size: 1.45rem; }
 .home-project div > p:not(.project-number) { max-width: 620px; margin: 0; color: var(--muted); font-size: .91rem; }
 .home-project > a, .home-about a { color: var(--accent-dark); font-size: .86rem; font-weight: 700; white-space: nowrap; }
@@ -155,7 +155,7 @@ a.social-placeholder { text-decoration: underline dotted; text-underline-offset:
 .chapter-number { color: var(--accent-dark); font: 700 .75rem var(--display); letter-spacing: .09em; }
 .story-chapter h3 { margin-bottom: 10px; }
 .story-chapter p { max-width: 690px; margin-bottom: 10px; color: var(--muted); }
-.story-chapter p:last-child { margin-bottom: 0; }
+.story-chapter p:last-child { margin: 0; }
 .chapter-mark { justify-self: end; font-size: 2rem; }
 .mark-sun { color: #a1b240; }.mark-wave { color: #739bb2; }.mark-star { color: #cb886a; }.mark-dot { color: #879940; }
 .photo-pair { display: grid; grid-template-columns: 1fr .75fr .8fr; align-items: center; gap: 18px; }
@@ -320,4 +320,17 @@ a.social-placeholder { text-decoration: underline dotted; text-underline-offset:
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     @view-transition { navigation: none; }
+}
+
+/* Focus styles for project notebook links */
+.home-project > a:focus-visible,
+.work-project-copy .text-link:focus-visible {
+    outline: 2px solid var(--accent-dark);
+    outline-offset: 2px;
+}
+
+/* Hover enhancement for project notebook links (matches existing link hover color) */
+.home-project > a:hover,
+.work-project-copy .text-link:hover {
+    color: var(--accent-dark);
 }
